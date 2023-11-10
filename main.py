@@ -13,9 +13,9 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Loan Data Processing, Training, and Evaluation')
-    parser.add_argument('--input_path', type=str, default='data/loan_data.csv', help='The input path for raw loan data')
-    parser.add_argument('--preprocess_output_dir', type=str, default='data', help='The output directory for preprocessed data')
-    parser.add_argument('--train_output_dir', type=str, default='analysis_outputs', help='The output directory for training and evaluation results')
+    parser.add_argument('--input_path', type=str, default='data/loan_data.csv')
+    parser.add_argument('--preprocess_output_dir', type=str, default='data')
+    parser.add_argument('--train_output_dir', type=str, default='analysis_outputs')
     args = parser.parse_args()
 
     main(args)
